@@ -1,7 +1,7 @@
 # 1.什么是ark-monitor-bug-repoter？
 &emsp;&emsp;ark-monitor-bug-repoter是ark系列框架中的异常播报服务，用于线上异常报警场景。
 <div align="center">
-    <img src="./img/1.png" width="80%" align="center"/>
+    <img src="./img/1.png" width="40%" align="center"/>
     <img src="./img/2.png" width="40%" align="center"/>
 </div>
 
