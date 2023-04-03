@@ -1,0 +1,33 @@
+server:
+  port: 80
+spring:
+  application:
+    name: ark-monitor-bug-repoter
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+  jackson:
+    time-zone: Asia/Shanghai
+  profiles:
+    active: dev
+nacos:
+  addr: tob-nacos-testnew.liangkebang.com:8848
+
+
+datasource:
+  data:
+    mysql:
+      jdbc-url: jdbc:mysql://xx/bugReport?useUnicode=true&useSSL=false&characterEncoding=utf8
+      max-pool-size: 10
+      password: 9h1nLvD5vSY7Byugbi
+      user: wdy_test
+warnInfoSplit: '] - '
+realtime:
+  statistics:
+    recently:
+      minusMinutes: 2
+short:
+  exception:
+    msg:
+      regex: ([a-zA-Z]+\.){1,}[a-zA-Z]+.[a-zA-Z]+Exception:.+
+    pinpoint:
+      regex: https://pinpoint.q-gp.com/transactionDetail\?transactionInfo.+]

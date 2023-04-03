@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ark.monitor.bug.repoter.error.mapper.ErrorDesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ark.monitor.bug.repoter.error.entity.ErrorDes">
+    <result column="id" property="id" />
+    <result column="created_at" property="createdAt" />
+        <result column="error_id" property="errorId" />
+        <result column="error_type" property="errorType" />
+        <result column="error_des" property="errorDes" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        created_at,
+        error_id, error_type, error_des,status
+    </sql>
+
+</mapper>
